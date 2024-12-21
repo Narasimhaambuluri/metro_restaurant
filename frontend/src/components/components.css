@@ -39,6 +39,7 @@
 .brand {
   font-size: 25px;
   font-weight: 900;
+  color: white;
 }
 .footer {
   background-color: black;
@@ -70,4 +71,39 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+}
+.ham-menu {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ham-menu {
+    display: block;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    grid-area: ham;
+    justify-self: flex-end;
+  }
+  .nav {
+    display: none;
+    grid-area: nav;
+    margin-top: 10px;
+    z-index: 9;
+    border-radius: 25px;
+  }
+  .nav-item {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lg ham" "nav nav";
+  }
+  .logo {
+    grid-area: lg;
+  }
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 import Navbar from "./../components/Navbar";
-import tableBack from "../images/book-table.jpg";
+import tableBack from "../images/book-table.jpeg";
 import "./pages.css";
 import axios from "axios";
 import { FaSearch } from "react-icons/fa";
@@ -209,31 +209,34 @@ function TableBook() {
                     );
                   })}
                 </datalist>
-
-                <button className="table-search-btn" onClick={fetchTables}>
-                  <FaSearch />
-                </button>
               </div>
               <input
-                type="date"
-                name=""
-                id=""
-                onChange={(e) => {
-                  setBookDate(e.target.value);
-                }}
-                style={{ padding: "10px 20px" }}
-              />
-              <button>
-                <Link
-                  to="/branches"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  All Branches
-                </Link>
+  type="date"
+  name=""
+  id=""
+  onChange={(e) => {
+    setBookDate(e.target.value);
+  }}
+  style={{
+    padding: "10px 20px",
+    backgroundColor: "black",
+    color: "white",
+    border: "1px solid white",
+    borderRadius: "4px",
+    appearance: "none",
+    WebkitAppearance: "none",
+    MozAppearance: "none",
+    position: "relative",
+    zIndex: "1",
+  }}
+/>
+              <button className="table-search-btn" onClick={fetchTables}>
+                <FaSearch />
+                <span>Search</span>
               </button>
             </div>
             {tableDetails ? (
-              <div>
+              <div className="table-main">
                 <div className="table-cards">
                   <div className="table-card">
                     <div className="table-type">Total Tables</div>
@@ -293,13 +296,7 @@ function TableBook() {
                 </div>
               </div>
             ) : (
-              <div>
-                <h1
-                  style={{ color: "black", fontFamily: "Roboto, sans-serif" }}
-                >
-                  Select your Location
-                </h1>
-              </div>
+              <div></div>
             )}
           </div>
         </div>

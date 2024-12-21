@@ -1,22 +1,15 @@
 import React, { useEffect } from "react";
 import { Parallax } from "react-parallax";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./pages.css";
 
-import Background1 from "../images/background1.jpg";
+import Background1 from "../images/background1.webp";
 import Background2 from "../images/background2.jpg";
 import Background3 from "../images/background3.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "./../components/Footer";
 
 function Home() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("session_key");
-    if (!token) {
-      navigate("/login");
-    }
-  });
   return (
     <div>
       <Parallax
@@ -32,7 +25,7 @@ function Home() {
       >
         <div className="section-1" id="section-1">
           <Navbar />
-          <div className="title">Taste the City.</div>
+          {/* <div className="title">Taste the City.</div> */}
         </div>
       </Parallax>
       <Parallax

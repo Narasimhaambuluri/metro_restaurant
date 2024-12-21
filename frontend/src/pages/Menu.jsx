@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Parallax } from "react-parallax";
 import Navbar from "./../components/Navbar";
-import menuBack from "../images/menu.jpg";
+import menuBack from "../images/menu.webp";
 import Footer from "./../components/Footer";
 import axios from "axios";
 import "./pages.css";
-import { useNavigate } from "react-router-dom";
 
 function Menu() {
   const [menuItems, setMenuItems] = useState({});
-  const navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("session_key");
-    if (!token) {
-      navigate("/login");
-    }
-  });
 
   useEffect(() => {
     const fetchAllItems = async () => {
@@ -46,7 +38,7 @@ function Menu() {
       >
         <Navbar />
         <div className="menu">
-          <h1>Our Menu</h1>
+          {/* <h1>Our Menu</h1> */}
           <div className="menu-btns">
             <button value="starters" onClick={fetchItems}>
               Starters

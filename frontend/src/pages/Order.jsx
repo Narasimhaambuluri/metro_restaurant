@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Parallax } from "react-parallax";
-import orderBack from "../images/order-back.jpg";
+import orderBack from "../images/order-back.webp";
 import Navbar from "./../components/Navbar";
 import "./pages.css";
 import { toast, Bounce } from "react-toastify";
@@ -98,7 +98,15 @@ function Order() {
         <div className="order-wrapper">
           <Navbar />
           <div className="order">
-            <h1>Order Your Favourite Food</h1>
+            <h1
+              style={{
+                color: "#fff100",
+                letterSpacing: "1.5px",
+                marginRight: "400px",
+              }}
+            >
+              Order Your Favourite Food
+            </h1>
             <div className="order-main">
               <div className="item-inputs">
                 <div className="item-input">

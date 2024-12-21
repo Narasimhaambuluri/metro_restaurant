@@ -4,17 +4,9 @@ import Loc from "../images/location.jpg";
 import Navbar from "./../components/Navbar";
 import axios from "axios";
 import Footer from "./../components/Footer";
-import { useNavigate } from "react-router-dom";
 
 function Branches() {
   const [locationData, setLocationData] = useState([]);
-  const navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("session_key");
-    if (!token) {
-      navigate("/login");
-    }
-  });
 
   useEffect(() => {
     const fetchData = async () => {

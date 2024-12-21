@@ -1,18 +1,10 @@
 import React, { useEffect } from "react";
 import { Parallax } from "react-parallax";
-import contactBack from "../images/contactback.png";
+import contactBack from "../images/contactback.webp";
 import Navbar from "./../components/Navbar";
 import Footer from "./../components/Footer";
-import { useNavigate } from "react-router-dom";
 
 function Contact() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("session_key");
-    if (!token) {
-      navigate("/login");
-    }
-  });
   return (
     <div className="contact-wrapper">
       <Parallax
@@ -28,7 +20,7 @@ function Contact() {
       >
         <Navbar />
         <div className="contact">
-          <h1>Contact</h1>
+          <h1>Feedback</h1>
           <div className="contact-main">
             <p>
               Dined with us recently?Got something you'd like to say about your

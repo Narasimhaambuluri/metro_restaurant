@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+.section-1 {
+  height: 100vh;
+  position: relative;
+}
+.section-2 {
+  height: 100vh;
+}
+.section-3 {
+  height: 80vh;
+}
+.title {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 43%;
+  left: 29%;
+  font-size: 80px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.menu-desc {
+  max-width: 400px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  top: 60px;
+  left: 80px;
+  border-radius: 20px;
+}
+.menu-desc h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.menu-desc p {
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #e21b39;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.ambience-desc {
+  max-width: 600px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  top: 100px;
+  right: -580px;
+  border-radius: 20px;
+}
+.branches {
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+.branches h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  letter-spacing: 1.5px;
+}
+.branch {
+  max-width: 400px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.branches-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.indicator {
+  color: #e21b39;
+  font-weight: bold;
+}
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.about h1 {
+  color: #caff00;
+  letter-spacing: 1.5px;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-main {
+  background-color: white;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 80vw;
+  padding: 20px;
+  border-radius: 20px;
+}
+.about-main h3 {
+  color: #e21b39;
+}
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.contact-main {
+  max-width: 50vw;
+  background-color: white;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+  font-weight: 600;
+  color: gray;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-element input,
+textarea {
+  outline: none;
+  padding: 10px 20px;
+}
+.form-element label {
+  color: #e21b39;
+}
+.contact-main button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #e21b39;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.menu {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f00b0b;
+  letter-spacing: 1.5px;
+}
+.menu-btns button {
+  padding: 15px 40px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.menu-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btns button:hover {
+  background-color: #bb152e;
+  color: white;
+  box-shadow: 2px 3px 4px black;
+  transition: 0.5s;
+}
+.menu-main {
+  max-width: 80vw;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 5px solid gray;
+}
+.item {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* max-width: 400px; */
+}
+.item-name {
+  color: #e21b39;
+  font-size: 26px;
+  font-weight: 900;
+}
+.item-desc {
+  color: gray;
+  font-size: 12px;
+}
+.item-price {
+  font-size: 18px;
+  font-weight: 700;
+}
+.item-line {
+  color: gray;
+  border: 1px solid gray;
+  width: 400px;
+  margin-top: 10px;
+}
+.auth-nav {
+  padding: 10px;
+}
+.register-main h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 20px;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.register {
+  min-height: 100vh;
+}
+.register-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-fields {
+  background-color: white;
+  color: #e21b39;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.reg-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reg-field input {
+  padding: 10px 20px;
+  width: 400px;
+}
+.register-fields button {
+  width: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #e21b39;
+  border: none;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.book-table {
+  min-height: 100vh;
+}
+.book-table-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.book-table-main h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.book-field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.book-field button {
+  padding: 10px 20px;
+  background-color: black;
+  border: none;
+}
+.all-loc input {
+  padding: 10px 20px;
+  width: 200px;
+  outline: none;
+}
+.book-field button:hover {
+  background-color: #e21b39;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.all-loc {
+  display: flex;
+}
+.table-search-btn {
+  background-color: #e21b39;
+  color: white;
+}
+.table-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+.table-card {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+.table-type {
+  font-size: 20px;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e21b39;
+}
+.table-available {
+  font-size: 25px;
+  font-weight: 800;
+}
+.table-card:hover {
+  scale: 1.07;
+  transition: 0.75s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.book-form select {
+  padding: 10px 20px;
+  width: 200px;
+  background-color: #e21b39;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.book-form button {
+  background-color: #e21b39;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.book-form {
+  display: flex;
+  gap: 20px;
+  margin-top: 80px;
+}
+.order-wrapper {
+  height: 100vh;
+}
+.order {
+  margin-top: 20px;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.no-items input {
+  padding: 10px 20px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+.no-items button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e21b39;
+  color: white;
+}
+.item-input input {
+  padding: 10px 20px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+.item-input {
+  display: flex;
+  gap: 10px;
+}
+.item-inputs {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  /* flex-direction: column; */
+}
+.order-btn button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #e21b39;
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+}
+.order-btn button:hover {
+  background-color: black;
+  transition: 1s all;
+}
+.order-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile-main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+}
+.profile {
+  min-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  gap: 40px;
+  border-radius: 20px;
+  height: 400px;
+  margin-top: 80px;
+  position: relative;
+  left: 40px;
+}
+.p-img {
+  width: 600px;
+  height: 500px;
+}
+.p-img img {
+  width: 100%;
+  height: 100%;
+}
+.p-name {
+  font-size: 25px;
+  font-weight: 900;
+}
+.p-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.p-btn:hover {
+  background-color: #e21b39;
+  color: white;
+  transition: all 1s;
+}
+.profile-main {
+  min-height: 100vh;
+}
+.my-bookings {
+  min-height: 100vh;
+}
+.my-bookings h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.my-bookings-main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  min-width: 700px;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.booking:hover {
+  background-color: #e21b39;
+  color: white;
+  transition: all 0.5s;
+  scale: 1.04;
+}
+.update {
+  min-height: 100vh;
+}
+.update {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.update h1 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  color: #caff00;
+  letter-spacing: 1.5px;
+}
+.update-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.update-main {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.update-field input {
+  padding: 10px 20px;
+  width: 400px;
+  outline: none;
+}
+.update-main button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #e21b39;
+  border: none;
+  cursor: pointer;
+}
+.table-search-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 50px;
+    left: 15%;
+  }
+  .menu-desc {
+    top: 20%;
+    left: 20%;
+  }
+  .ambience-desc {
+    top: 20%;
+    max-width: 400px;
+    left: 20%;
+  }
+  .menu-btns {
+    flex-wrap: wrap;
+  }
+  .table-cards {
+    flex-direction: column;
+  }
+  .table-card {
+    min-width: 300px;
+  }
+  .book-form {
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    left: 60px;
+    margin-top: 40px;
+  }
+  .item-inputs {
+    flex-wrap: wrap;
+    position: relative;
+    left: 30px;
+  }
+  .about-main {
+    margin-bottom: 20px;
+  }
+  .form-element textarea {
+    outline: none;
+    padding: 10px 20px;
+    max-width: 200px;
+  }
+  .booking {
+    max-width: 400px;
+    min-width: 300px;
+  }
+}

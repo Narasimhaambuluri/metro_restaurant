@@ -15,14 +15,14 @@ function Footer() {
           <Link to="/" className="footer-item">
             Home
           </Link>
-          <Link to="/branches" className="footer-item">
+          {/* <Link to="/branches" className="footer-item">
             Branches
-          </Link>
+          </Link> */}
           <Link to="/about" className="footer-item">
             About
           </Link>
           <Link to="/contact" className="footer-item">
-            Contact
+            FeedBack
           </Link>
         </div>
         <div className="footer-icons">

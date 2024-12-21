@@ -14,6 +14,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
 import MyOrders from "./pages/MyOrders";
+// import Developers from './pages/Developers';
+import Designers from "./pages/Designers";
 
 function App() {
   return (
@@ -43,6 +45,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/mybookings" element={<MyBookings />} />
           <Route path="/myorders" element={<MyOrders />} />
+          <Route path="/developers" element={<Designers />} />
         </Routes>
       </BrowserRouter>
     </div>

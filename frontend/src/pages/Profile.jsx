@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./../components/Navbar";
 import { Parallax } from "react-parallax";
-import Pimage from "../images/p-image.jpg";
+import Pimage from "../images/p-image.webp";
 import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
 import axios from "axios";
